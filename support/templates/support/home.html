@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="{% static 'support/style.css' %}" />
+  </head>
+  <body>
+    <h1>Welcome to Your Mental Health Support Page</h1>
+    <p>How are you feeling today?</p>
+    <form action="{% url 'response' %}" method="POST">
+      {% csrf_token %}
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+      <select name="feeling" required>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="anxious">Anxious</option>
+        <option value="angry">Angry</option>
+        <option value="tired">Tired</option>
+        <option value="alone">Alone</option>
+        <option value="depressed">Depressed</option>
+        <option value="addicted">Addicted</option>
+        <option value="stressed">Stressed</option>
+        <option value="cheated">Cheated</option>
+        <option value="experiencing_conflict">Experiencing Conflict</option>
+        <option value="considering_suicide">Considering Suicide</option>
+        <option value="hope">Hope</option>
+        <option value="peace">Peace</option>
+        <option value="joy">Joy</option>
+        <option value="comfort">Comfort</option>
+        <option value="purpose">Purpose</option>
+        <option value="forgiveness">Forgiveness</option>
+        <option value="god">God</option>
+        <option value="fear">Fear</option>
+        <option value="anxiety">Anxiety</option>
+        <option value="loss">Loss</option>
+        <option value="change">Change</option>
+        <option value="healing">Healing</option>
+        <option value="courage">Courage</option>
+        <option value="resilience">Resilience</option>
+        <option value="gratitude">Gratitude</option>
+        <option value="self_love">Self-Love</option>
+        <option value="kindness">Kindness</option>
+        <option value="patience">Patience</option>
+        <option value="faith">Faith</option>
+        <option value="joyful">Joyful</option>
+        <option value="encouragement">Encouragement</option>
+        <option value="acceptance">Acceptance</option>
+        <option value="surrender">Surrender</option>
+        <option value="strength">Strength</option>
+        <option value="love">Love</option>
+        <option value="guidance">Guidance</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="quote">
+      <p>"Amor fati" — Robert Greene</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <p>Created and designed by: WesTech Lab</p>
+      <p>Email: eugenewesonga65@gmail.com</p>
+    </div>
+  </body>
+</html>

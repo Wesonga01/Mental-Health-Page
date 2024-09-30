@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support Response</title>
+    <link rel="stylesheet" href="{% static 'support/response.css' %}">
+</head>
+<body>
+    <h1>Hello {{ name }},</h1>
+    <p>You said you are feeling {{ feeling }}.</p>
+    <p>{{ message }}</p>  <!-- Display the encouragement message -->
+    <a href="{% url 'home' %}">Back</a>
+
+    <div class="label">
+        <p>The Stoics </p>
+        <p>WesTech Lab </p>
+      </div>
+
+    
+
+
+</body>
+</html>

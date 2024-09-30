@@ -1,0 +1,58 @@
+/* response.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  background-image: linear-gradient(
+    to bottom right,
+    #e0f7fa,
+    #ffffff
+  ); /* Soft gradient */
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Dark text for readability */
+}
+
+h1 {
+  color: #005f73; /* Dark teal color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message {
+  background-color: #e7f3fe; /* Light blue background for messages */
+  border-left: 6px solid #2196f3; /* Blue left border */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+  background-color: #2196f3; /* Blue button background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  font-style: italic;
+  color: #555;
+  font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+}
